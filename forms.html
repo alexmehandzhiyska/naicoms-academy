@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Profile form page">
+    <meta name="keywords" content="Form, profile">
+    <meta name="author" content="Alex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Form</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/forms.css">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <script src="./js/forms.js" defer></script>
+    <script src="./js/navbar.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p id="logo">LOGO</p>
+            
+            <ul>
+                <li><a href="./index.html" class="tooltip">Home <span class="tooltiptext">The home page</span></a></li>
+                <li><a href="./tables.html" class="tooltip">Tables <span class="tooltiptext">Tables about crypto, etc.</span></a></li>
+                <li><a href="./lists.html" class="tooltip">Lists <span class="tooltiptext">My favourite things</span></a></li>
+                <li><a href="./forms.html" class="tooltip">Forms <span class="tooltiptext">Register and login form</span></a></li>
+                <li><a href="./game.html" class="tooltip">Game <span class="tooltiptext">Guessing game</span></a></li>
+                <li><a href="./users_list.html" class="tooltip">Users <span class="tooltiptext">List of all the users</span></a></li>
+            </ul>
+
+            <i class="fa fa-bars fa-lg" id="bar-menu"></i>
+        </nav>
+    </header>   
+
+    <section class="content-wrapper">
+        <aside>
+            <nav id="side-nav">
+                <ul>
+                    <button class="close-btn">X</button>
+                    <li><a href="./index.html">Home </a></li>
+                    <li><a href="./tables.html">Tables </a></li>
+                    <li><a href="./lists.html">Lists</a></li>
+                    <li><a href="./forms.html">Forms </a></li>
+                    <li><a href="./game.html">Game</a></li>
+                    <li><a href="./users_list.html">Users</a></li>
+                </ul>
+            </nav>
+        </aside>
+    
+    
+        <main>
+            <!-- <form>
+                <fieldset name="profile">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name">
+    
+                    <br>
+    
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name">
+    
+                    <br>
+    
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age">
+    
+                    <br>
+    
+                    <h3>Gender</h3>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+    
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+    
+                    <br>
+                    <h3>Subjects</h3>
+                    <input type="checkbox" id="subject1" name="subject1" value="english">
+                    <label for="subject1">English</label>
+    
+                    <input type="checkbox" id="subject2" name="subject2" value="math">
+                    <label for="subject2">Math</label>
+    
+                    <input type="checkbox" id="subject3" name="subject3" value="science">
+                    <label for="subject3">Science</label>
+                </fieldset>
+    
+                <fieldset name="interests">
+                    <label for="interest">Field of interest: </label>
+                    <select name="interest" id="interest">
+                        <option value="coding">Coding</option>
+                        <option value="politics">Politics</option>
+                        <option value="medicine">Medicine</option>
+                        <option value="history">History</option>
+                    </select>
+                </fieldset>
+    
+                <br><br>
+                <input type="submit" value="Register">
+            </form> -->
+            <section id="forms-wrapper">
+                <nav id="form-nav">
+                    <ul>
+                        <li id="login-btn">Login</li>
+                        <li id="register-btn">Register</li>
+                    </ul>
+                </nav>
+    
+                <section id="login-form">
+                    <h1>Log in</h1>
+                    <form>
+                        <article class="input-group">
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email">
+                        </article>
+    
+                        <article class="input-group">
+                            <label for="password">Password: </label>
+                            <input type="password" name="password" id="password">
+                        </article>
+    
+                        <article class="input-group">
+                            <input type="submit" value="Log In">
+                        </article>
+                    </form>
+                </section>
+    
+                <section id="register-form">
+                    <h1>Register</h1>
+                    <form>
+                        <article class="input-group">
+                            <label for="first-name">First name: </label>
+                            <input type="text" name="first-name" id="first-name">
+                        </article>
+    
+                        <article class="input-group">
+                            <label for="last-name">Last Name: </label>
+                            <input type="text" name="last-name" id="last-name">
+                        </article>
+    
+                        <article class="input-group">
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email">
+                        </article>
+    
+                        <article class="input-group">
+                            <label for="pass">Password: </label>
+                            <input type="password" name="pass" id="pass">
+                        </article>
+    
+                        <article class="input-group">
+                            <label for="confirm-pass">Confirm Password: </label>
+                            <input type="password" name="confirm-pass" id="confirm-pass">
+                        </article>
+    
+                        <article class="input-group">
+                            <input type="radio" name="male" id="male">
+                            <label for="male">Male</label>
+                            <input type="radio" name="female" id="female">
+                            <label for="female">Female</label>
+                        </article>
+    
+                        <article class="input-group">
+                            <label for="birthday">Date of birth: </label>
+                            <input type="date" name="birthday" id="birthday">
+                        </article>
+    
+                        <article class="input-group">
+                            <label for="phone">Phone number: </label>
+                            <input type="text" name="phone" id="phone">
+                        </article>
+    
+                        <article class="input-group">
+                            <input type="checkbox" name="consent" id="consent">
+                            <label for="consent">I agree with the terms and conditions.</label>
+                        </article>
+    
+                        <article class="input-group">
+                            <input type="submit" value="Register">
+                        </article>
+                    </form>
+                </section>
+            </section>
+    
+            <section id="users">
+                <table id="users-table">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Gender</th>
+                            <th>Birthday</th>
+                            <th>Phone Number</th>
+                            <th>Submission time</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+    
+                    </tbody>
+                </table>
+            </section>
+    
+        </main>
+    </section>
+    
+
+    <footer>
+        <section class="footer-name">
+            <p>Alexandrina</p>
+        </section>
+
+        <section class="footer-nav">
+            <ul>
+                <li>FAQ</li>
+                <li>Contacts</li>
+                <li>GDPR</li>
+            </ul>
+        </section>
+
+        <section class="footer-nav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./tables.html">Tables</a></li>
+                <li><a href="./lists.html">Lists</a></li>
+                <li><a href="./forms.html">Forms</a></li>
+                <li><a href="./game.html">Game</a></li>
+                <li><a href="./users_list.html">Users</a></li>
+            </ul>
+        </section>
+    </footer>
+
+</body>
+
+</html>
