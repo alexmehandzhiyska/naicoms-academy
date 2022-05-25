@@ -1,12 +1,12 @@
 <?php 
     session_start();
 
-    if (isset($_SESSION['logged_in'])) {
-        header('Location: tables.php');
-        exit();
-    }
+    // if (isset($_SESSION['logged_in'])) {
+    //     header('Location: tables.php');
+    //     exit();
+    // }
     
-    if (isset($_POST['login'])) {
+    if (isset($_POST['login-form'])) {
         $db = new mysqli('localhost', 'root', '', 'online_bookstore');
 
         $email = $db->real_escape_string($_POST['email']);

@@ -1,4 +1,4 @@
-<?php include "checkForSession.php"; ?>
+<?php include "./db/checkForSession.php"; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <?php include 'header.php';?>
+    <?php include './layout/header.php';?>
 
     <section class="content-wrapper">
         <aside>
@@ -177,7 +177,7 @@
         </main>
     </section>
     
-    <?php include 'footer.php'; ?>
+    <?php include './layout/footer.php'; ?>
 </body>
 
 </html>

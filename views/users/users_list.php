@@ -15,13 +15,13 @@
     <link rel="stylesheet" href="../css/users_list.css">
     <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
 
-    <script src="../js/user.js" defer></script>
+    <script src="../js/users_list.js" defer></script>
     <script src="../js/navbar.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <?php include 'header.php';?>
+    <?php include './layout/header.php';?>
 
     <section class="content-wrapper">
         <aside>
@@ -40,14 +40,14 @@
     
     
         <main>
-            <h1 class="title">User</h1>
+            <h1 class="title">Users</h1>
     
-            <section class="user">
+            <section id="users">
             </section>
         </main>
     </section>
     
-    <?php include 'footer.php'; ?>
+    <?php include './layout/footer.php'; ?>
 </body>
 
 </html>
