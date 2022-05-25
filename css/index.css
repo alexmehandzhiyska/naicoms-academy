@@ -1,0 +1,79 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parallax-01,
+.parallax-02,
+.parallax-03,
+.parallax-04 {
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-01 {
+    background-image: url('../img/parallax-01.jpeg');
+}
+
+.parallax-02 {
+    background-image: url('../img/parallax-02.jpeg');
+}
+
+.parallax-03 {
+    background-image: url('../img/parallax-03.jpeg');
+}
+
+.parallax-04 {
+    background-image: url('../img/parallax-04.jpeg');
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin: 50px 0;
+}
+
+#calculator table,
+#calculator td {
+    border: 3px solid #e6e6e6;
+    border-collapse: collapse;
+}
+
+#calculator td {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 25px 30px;
+}
+
+#calculator tr:nth-child(1),
+#calculator tr:nth-child(2) {
+    background: #f0f0f0;
+}
+
+#calculator td:last-child {
+    background: #f0f0f0;
+}
+
+#result {
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: right;
+    color: black;
+    background: #e6e6e6;
+    padding: 30px;
+}
+
+.num {
+    font-weight: bold;
+}
+
+#equals {
+    background: #8abae0 !important;
+}
+
